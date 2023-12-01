@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "cochocib-script-latin-pro";
+  src: url("cochocib-script-latin-pro.ttf") format("truetype");
+  /* 可以添加其他字体格式和属性 */
+}
+
+body {
+  height: 100%;
+}
+
+body::after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% 的黑色半透明背景 */
+  z-index: -1; /* 确保这个半透明背景在视频和其他内容之下 */
+}
+
+/* 添加视频背景样式 */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* 当视口宽度小于 768px 时，视频尺寸变小 */
+@media (max-width: 768px) {
+  video {
+    width: 100vw; /* 视口宽度 */
+    height: 56.25vw; /* 16:9 宽高比的视频高度 */
+  }
+}
+
+/* Header 样式 */
+h1 {
+  font-weight: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  text-align: left; /* 居中对齐 */
+  margin-bottom: 50px; /* 下方空间 */
+  margin-top: 300px;
+}
+
+.highlighted {
+  font-size: 100px;
+  font-family: "cochocib-script-latin-pro";
+}
+/* 按钮样式 */
+button {
+  background-color: rgb(255, 255, 255, 0);
+  color: white; /* 白色文本 */
+  padding: 10px 20px; /* 内部填充 */
+  border: 3px solid white;
+  border-radius: 20px; /* 边角圆润 */
+  cursor: pointer; /* 鼠标指针为手形 */
+  font-size: 16px; /* 文字大小 */
+  transition: background-color 0.3s ease; /* 平滑过渡效果 */
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 3px solid white;
+  border-radius: 20px; /* 边角圆润 */
+}

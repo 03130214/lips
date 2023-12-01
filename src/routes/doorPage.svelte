@@ -13,8 +13,22 @@
   onDestroy(unsubscribe);
 </script>
 
-<h1>Welcome to lips</h1>
+<!-- 添加视频作为背景 -->
+<video autoplay loop muted>
+  <source src="testBackground.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
-{#if currentpath == "/"}
-  <button on:click={handleLogin}> Log in </button>
-{/if}
+<div>
+  <h1>
+    <span class="highlighted"> LIPS </span> -A lightweight information portal system
+  </h1>
+  <button on:click={handleLogin}> About us </button>
+  {#if currentpath == "/"}
+    <button on:click={handleLogin}> Log in </button>
+  {/if}
+</div>
+
+<style>
+  @import "../styles/doorpage.css";
+</style>

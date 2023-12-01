@@ -1,14 +1,13 @@
-
-  .content-box {
-    width:300px;
-    position: relative;
-    padding: 0 24px 24px;
-    background: #fff;
-    border: 1px solid #d7d7d7;
-    height: 70px;
+.content-box {
+  width: 300px;
+  position: relative;
+  padding: 0 24px 24px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  height: 70px;
 }
-.item-box{
-    width: 307px;
-    height: 38px;
-    position:relative;
+.item-box {
+  width: 307px;
+  height: 38px;
+  position: relative;
 }

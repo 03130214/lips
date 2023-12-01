@@ -1,10 +1,6 @@
-
 <script>
   import Router from "svelte-spa-router";
-  import { push, location } from "svelte-spa-router";
-  import { onDestroy } from "svelte";
   import routes from "./router";
-  import PocketBase from "pocketbase";
   //import "./styles.css"
 </script>
 

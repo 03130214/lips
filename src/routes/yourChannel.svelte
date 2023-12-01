@@ -1,3 +1,1 @@
-<h1>
-    channels which you have joined
-</h1>
+<h1>channels which you have joined</h1>
