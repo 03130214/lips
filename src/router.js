@@ -4,7 +4,10 @@ import DoorPage from "./routes/doorPage.svelte";
 import Register from "./routes/register.svelte";
 import CreateChannel from "./routes/createChannel.svelte";
 import CheckInformation from "./routes/checkInformation.svelte";
-import YourChannel from "./routes/yourChannel.svelte";
+import SearchChannel from "./routes/searchChannel.svelte";
+import SendNotification from "./routes/sendNotification.svelte";
+import Participants from "./routes/participants.svelte";
+import SelectTags from "./routes/selectTags.svelte";
 export default {
   "/": DoorPage,
   "/login": Login,
@@ -12,5 +15,8 @@ export default {
   "/register": Register,
   "/createChannel": CreateChannel,
   "/checkInformation": CheckInformation,
-  "/yourChannel": YourChannel,
+  "/searchChannel": SearchChannel,
+  "/postnotice": SendNotification,
+  "/participants": Participants,
+  "/selectTags": SelectTags,
 };

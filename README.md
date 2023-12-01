@@ -48,9 +48,18 @@ npm run dev
     - `api/` 将网络请求封装成一个个函数
     - `types/` 存放数据结构
 
-## 安装依赖
+## 常用命令
+
+### 安装依赖
 
 ```
 npm install
+```
+
+### 代码检验
+
+```
+npm run format-check
+npm run format
 ```
 
